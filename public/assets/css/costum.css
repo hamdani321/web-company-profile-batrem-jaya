@@ -1,0 +1,321 @@
+/* halaman Blog CSS */
+
+/* Main Card */
+.blog-card {
+    overflow: hidden;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(31, 55, 40, 0.05);
+}
+
+.blog-card-header {
+    padding: 26px 26px 18px;
+}
+
+.blog-card-header h4 {
+    color: #25392e;
+    font-size: 1.25rem;
+    font-weight: 750;
+}
+
+.blog-card-header p {
+    font-size: 0.875rem;
+}
+
+/* Add Button */
+.btn-add-blog {
+    padding: 10px 17px;
+    color: #fff;
+    background: #245d4b;
+    border: 1px solid #245d4b;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-add-blog:hover {
+    color: #fff;
+    background: #194735;
+    border-color: #194735;
+    transform: translateY(-1px);
+}
+
+/* Search */
+.blog-search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 14px;
+    background: #f8faf8;
+    border: 1px solid #e8eee9;
+    border-radius: 10px;
+}
+
+.blog-search-box i {
+    color: #829187;
+}
+
+.blog-search-box .form-control {
+    min-height: 43px;
+    padding-left: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: 0.85rem;
+}
+
+.blog-filter {
+    min-height: 45px;
+    background-color: #f8faf8;
+    border-color: #e8eee9;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+.blog-search-box:focus-within,
+.blog-filter:focus {
+    border-color: #7eaa8c;
+    box-shadow: 0 0 0 3px rgba(36, 93, 75, 0.08);
+}
+
+.btn-reset {
+    min-height: 43px;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+/* Table */
+.blog-table {
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: #f8fbf8;
+}
+
+.blog-table thead th {
+    padding: 15px 14px;
+    color: #859187;
+    background: #f8faf8;
+    border-top: 1px solid #edf1ed;
+    border-bottom: 1px solid #edf1ed;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.blog-table tbody td {
+    padding: 17px 14px;
+    border-bottom: 1px solid #f0f3f0;
+    color: #526258;
+    font-size: 0.84rem;
+}
+
+.blog-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.blog-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+/* Article */
+.blog-thumbnail {
+    width: 76px;
+    height: 62px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #eef2ee;
+}
+
+.blog-title-wrapper {
+    max-width: 270px;
+}
+
+.blog-title-wrapper h6 {
+    color: #2b4033;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.blog-title-wrapper p {
+    display: -webkit-box;
+    overflow: hidden;
+    color: #98a198;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Category */
+.blog-category {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #28794e;
+    background: #eaf6ed;
+    border-radius: 7px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.category-blue {
+    color: #326ab4;
+    background: #edf4ff;
+}
+
+.category-purple {
+    color: #7952ad;
+    background: #f3edfc;
+}
+
+/* Date */
+.blog-date {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.blog-date span {
+    color: #526258;
+    font-weight: 600;
+}
+
+.blog-date small {
+    color: #a0a9a2;
+    font-size: 0.73rem;
+}
+
+/* Status */
+.blog-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 0.73rem;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.status-published {
+    color: #25804d;
+    background: #eaf7ee;
+}
+
+.status-published .status-dot {
+    background: #35a367;
+}
+
+.status-draft {
+    color: #b77925;
+    background: #fff4e2;
+}
+
+.status-draft .status-dot {
+    background: #e8a23b;
+}
+
+/* Action Buttons */
+.btn-blog-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-view {
+    color: #34775b;
+    background: #edf7ef;
+}
+
+.btn-view:hover {
+    color: #fff;
+    background: #34775b;
+}
+
+.btn-edit {
+    color: #3975c6;
+    background: #edf4ff;
+}
+
+.btn-edit:hover {
+    color: #fff;
+    background: #3975c6;
+}
+
+.btn-delete {
+    color: #d65353;
+    background: #fff0f0;
+}
+
+.btn-delete:hover {
+    color: #fff;
+    background: #d65353;
+}
+
+/* Pagination */
+.blog-table-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    border-top: 1px solid #edf1ed;
+}
+
+.blog-table-footer .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    margin: 0 2px;
+    color: #5c6d61;
+    border-color: #e9eee9;
+    border-radius: 7px;
+    font-size: 0.8rem;
+}
+
+.blog-table-footer .page-item.active .page-link {
+    color: #fff;
+    background: #245d4b;
+    border-color: #245d4b;
+}
+
+.blog-table-footer .page-item.disabled .page-link {
+    background: #f8faf8;
+}
+
+@media (max-width: 767.98px) {
+    .blog-card-header {
+        padding: 22px 18px 16px;
+    }
+
+    .blog-card-header .btn-add-blog {
+        width: 100%;
+    }
+
+    .blog-table-footer {
+        padding: 18px;
+    }
+}
+
+/* End halaman Blog CSS */

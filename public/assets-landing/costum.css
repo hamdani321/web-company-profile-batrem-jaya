@@ -1,0 +1,48 @@
+.product-card {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-image-wrapper {
+    height: 230px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.06);
+}
+
+.product-title {
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.product-description {
+    line-height: 1.7;
+    min-height: 3.4em;
+}
+
+.product-card .btn {
+    transition: all 0.25s ease;
+}
+
+.product-card .btn:hover {
+    transform: translateY(-2px);
+}
